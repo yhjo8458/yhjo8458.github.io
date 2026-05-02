@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Developer portfolio website">
+    <title>Developer Portfolio</title>
+    <link rel="stylesheet" href="./assets/css/styles.css">
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header" data-header>
+      <div class="shell header-inner">
+        <a class="brand" href="#hero" data-brand>Portfolio</a>
+        <nav class="nav" aria-label="Primary navigation" data-nav></nav>
+        <button class="language-toggle" type="button" data-language-toggle aria-label="Switch language">
+          EN
+        </button>
+      </div>
+    </header>
+
+    <main id="main" data-app>
+      <section class="hero section" id="hero" data-section="hero"></section>
+      <section class="section" id="about" data-section="about"></section>
+      <section class="section muted" id="projects" data-section="projects"></section>
+      <section class="section" id="process" data-section="process"></section>
+      <section class="section muted" id="tech" data-section="tech"></section>
+      <section class="section contact-section" id="contact" data-section="contact"></section>
+    </main>
+
+    <script src="./assets/js/data/portfolio-data.js"></script>
+    <script src="./assets/js/services/portfolio-service.js"></script>
+    <script src="./assets/js/ui/portfolio-renderer.js"></script>
+    <script src="./assets/js/controllers/portfolio-controller.js"></script>
+    <script src="./assets/js/app.js"></script>
+  </body>
+</html>
