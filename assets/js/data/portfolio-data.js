@@ -15,7 +15,7 @@
         { id: "contact", label: "연락" }
       ],
       profile: {
-        name: "조요한",
+        name: "YHJO",
         role: "개발자",
         tagline: "반복 업무를 줄이고, 안정적으로 운영되는 웹/자동화 도구, 수익화 프로그램을 만듭니다.",
         intro: "작게 시작해도 나중에 확장하기 쉬운 구조를 우선합니다. 요구사항을 정리하고, 데이터 흐름을 설계하며, 유지보수 가능한 결과물을 만드는 데 집중합니다.",
@@ -131,7 +131,7 @@
         { id: "contact", label: "Contact" }
       ],
       profile: {
-        name: "Your Name",
+        name: "YHJO",
         role: "Developer",
         tagline: "I build practical web and automation tools that reduce repetitive work.",
         intro: "I prefer structures that can start small and grow without heavy rewrites. I focus on requirements, data flow, and maintainable delivery.",
