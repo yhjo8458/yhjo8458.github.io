@@ -15,9 +15,9 @@
         { id: "contact", label: "연락" }
       ],
       profile: {
-        name: "Your Name",
-        role: "Developer",
-        tagline: "반복 업무를 줄이고, 안정적으로 운영되는 웹/자동화 도구를 만듭니다.",
+        name: "조요한",
+        role: "개발자",
+        tagline: "반복 업무를 줄이고, 안정적으로 운영되는 웹/자동화 도구, 수익화 프로그램을 만듭니다.",
         intro: "작게 시작해도 나중에 확장하기 쉬운 구조를 우선합니다. 요구사항을 정리하고, 데이터 흐름을 설계하며, 유지보수 가능한 결과물을 만드는 데 집중합니다.",
         availability: "Open to selected projects",
         location: "South Korea",
@@ -65,7 +65,7 @@
       ],
       projects: [
         {
-          name: "Automation Dashboard",
+          name: "업무 자동화 프로그램",
           problem: "반복 보고와 파일 정리가 수작업으로 관리되어 시간이 많이 들었습니다.",
           solution: "입력 데이터 검증, 처리 단계, 결과 확인 화면을 분리한 내부 도구를 설계했습니다.",
           result: "작업 흐름을 표준화하고 사람이 확인해야 하는 지점을 줄였습니다.",
@@ -73,7 +73,7 @@
           link: ""
         },
         {
-          name: "Portfolio Website",
+          name: "포트폴리오 웹사이트",
           problem: "프로젝트와 작업 방식을 한 곳에서 보여줄 수 있는 개인 사이트가 필요했습니다.",
           solution: "정적 배포가 가능한 원페이지 구조와 언어 전환 가능한 데이터 렌더링을 구성했습니다.",
           result: "GitHub Pages에 바로 올릴 수 있고, 데이터 파일만 수정해 내용을 확장할 수 있습니다.",
@@ -81,7 +81,7 @@
           link: ""
         },
         {
-          name: "Client Workflow Tool",
+          name: "고객 워크플로우 도구",
           problem: "고객별 요청과 산출물 관리 방식이 달라 추적이 어려웠습니다.",
           solution: "작업 상태, 산출물 링크, 다음 액션을 한 화면에서 확인하는 구조를 제안했습니다.",
           result: "협업 흐름을 단순화하고 누락 가능성을 낮추는 기반을 만들었습니다.",
