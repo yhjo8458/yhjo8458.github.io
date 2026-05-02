@@ -86,7 +86,7 @@
       data.profile.intro ? '<p class="section-description">' + escapeHtml(data.profile.intro) + "</p>" : "",
       ctas ? '<div class="cta-row">' + ctas + "</div>" : "",
       "</div>",
-      panelRows ? '<aside class="hero-panel" aria-label="Portfolio summary">' + panelRows + "</aside>" : "",
+      panelRows ? '<aside class="hero-panel" aria-label="포트폴리오 요약">' + panelRows + "</aside>" : "",
       "</div>"
     ].join("");
   }
@@ -136,16 +136,16 @@
       }).join("") : "";
 
       var link = project.link
-        ? '<a class="project-link" href="' + attr(project.link) + '" target="_blank" rel="noreferrer">View project</a>'
+        ? '<a class="project-link" href="' + attr(project.link) + '" target="_blank" rel="noreferrer">' + escapeHtml(data.labels.projectLink || "프로젝트 보기") + "</a>"
         : "";
 
       return [
         '<article class="card project-card">',
         "<h3>" + escapeHtml(project.name) + "</h3>",
         '<div class="meta">',
-        renderProjectField("Problem", project.problem),
-        renderProjectField("Solution", project.solution),
-        renderProjectField("Result", project.result),
+        renderProjectField(data.labels.projectProblem || "문제", project.problem),
+        renderProjectField(data.labels.projectSolution || "해결", project.solution),
+        renderProjectField(data.labels.projectResult || "결과", project.result),
         "</div>",
         tags ? '<ul class="tag-list">' + tags + "</ul>" : "",
         link,
@@ -156,7 +156,7 @@
     target.innerHTML = [
       sectionHeading(getSection(data, "projects")),
       '<div class="shell">',
-      projects ? '<div class="grid auto-grid">' + projects + "</div>" : '<div class="empty-state">' + escapeHtml(data.emptyMessages.projects || "No projects.") + "</div>",
+      projects ? '<div class="grid auto-grid">' + projects + "</div>" : '<div class="empty-state">' + escapeHtml(data.emptyMessages.projects || "표시할 프로젝트가 없습니다.") + "</div>",
       "</div>"
     ].join("");
   }
@@ -246,7 +246,7 @@
       section.eyebrow ? '<p class="eyebrow">' + escapeHtml(section.eyebrow) + "</p>" : "",
       section.title ? '<h2 class="section-title">' + escapeHtml(section.title) + "</h2>" : "",
       section.description ? "<p>" + escapeHtml(section.description) + "</p>" : "",
-      links.length ? '<div class="contact-links">' + links.join("") + "</div>" : '<div class="empty-state">' + escapeHtml(data.emptyMessages.links || "No links.") + "</div>",
+      links.length ? '<div class="contact-links">' + links.join("") + "</div>" : '<div class="empty-state">' + escapeHtml(data.emptyMessages.links || "표시할 링크가 없습니다.") + "</div>",
       "</div>",
       "</div>"
     ].join("");
@@ -254,7 +254,7 @@
 
   function renderMeta(data) {
     document.documentElement.lang = data.language;
-    document.title = data.meta.title || data.profile.name || "Developer Portfolio";
+    document.title = data.meta.title || data.profile.name || "개발자 포트폴리오";
 
     var metaDescription = document.querySelector('meta[name="description"]');
     if (metaDescription && data.meta.description) {

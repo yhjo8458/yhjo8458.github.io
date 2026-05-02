@@ -2,44 +2,17 @@
   "use strict";
 
   function createController(service, renderer) {
-    var currentLanguage = service.getStoredLanguage();
     var observer = null;
 
     function init() {
-      renderCurrentLanguage();
-      bindLanguageToggle();
+      renderPage();
       bindSmoothAnchors();
       setupActiveNavigation();
     }
 
-    function renderCurrentLanguage() {
-      var data = service.getPortfolio(currentLanguage);
+    function renderPage() {
+      var data = service.getPortfolio();
       renderer.render(data);
-      updateLanguageToggle();
-    }
-
-    function bindLanguageToggle() {
-      var toggle = document.querySelector("[data-language-toggle]");
-      if (!toggle) {
-        return;
-      }
-
-      toggle.addEventListener("click", function () {
-        currentLanguage = currentLanguage === "ko" ? "en" : "ko";
-        service.storeLanguage(currentLanguage);
-        renderCurrentLanguage();
-        setupActiveNavigation();
-      });
-    }
-
-    function updateLanguageToggle() {
-      var toggle = document.querySelector("[data-language-toggle]");
-      if (!toggle) {
-        return;
-      }
-
-      toggle.textContent = currentLanguage === "ko" ? "EN" : "KO";
-      toggle.setAttribute("aria-label", currentLanguage === "ko" ? "Switch to English" : "한국어로 전환");
     }
 
     function bindSmoothAnchors() {
