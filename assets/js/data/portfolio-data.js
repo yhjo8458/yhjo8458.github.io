@@ -81,6 +81,14 @@
         link: "https://yhjo8458.github.io/daily_finance_briefing/"
       },
       {
+        name: "네이버 블로그 검색 결과 크롤링",
+        problem: "네이버 블로그 검색 결과처럼 스크롤에 따라 추가 데이터가 로드되는 동적 페이지에서 특정 키워드의 글 목록을 끝까지 수집하고, 활용 가능한 CSV 데이터로 정리하는 흐름을 실습했습니다.",
+        solution: "Playwright CLI로 실제 브라우저를 제어해 검색 결과 페이지에 접속하고, DOM 구조를 확인한 뒤 결과 컨테이너 기준으로 제목, 출처명, 출처 유형, 출처 주소, 블로그 ID, 발행일, URL을 추출했습니다. 페이지 높이와 결과 수가 더 이상 변하지 않을 때까지 반복 스크롤한 뒤 CSV로 저장하고, 수집 기준일인 2026.05.03 기준으로 상대 날짜를 YYYY.MM.DD 형식으로 변환했습니다.",
+        result: "최종 108건을 수집했고 네이버 블로그 103건, 티스토리 5건이 포함되었습니다. 동적 페이지는 최초 HTML 요청만으로 충분하지 않으며 스크롤 로딩 종료 조건을 확인해야 한다는 점, 상대 날짜는 기준일을 정해 절대 날짜로 정규화해야 한다는 점, CSV는 행 수, URL 중복, 필수 컬럼 누락, 날짜 형식을 검증해야 신뢰할 수 있다는 점을 기억할 내용으로 정리했습니다.",
+        tech: ["Playwright CLI", "Browser Automation", "DOM Parsing", "CSV", "Data Cleaning"],
+        link: ""
+      },
+      {
         name: "업무 문서 자동화 데스크톱 프로그램",
         problem: "Windows 환경에서 반복되는 엑셀 문서 작성과 고객사 정보 관리를 자동화하면서, GUI 프로그램도 유지보수 가능한 계층 구조로 만들 수 있는지 실습했습니다.",
         solution: "Tkinter UI에서 직접 엑셀이나 DB를 다루지 않고 Event Handler, Controller, Service, Repository, Infrastructure로 흐름을 분리했습니다. openpyxl, SQLAlchemy, SQLite, pywin32, settings.json, 템플릿 파일을 각각 책임에 맞게 나누었습니다.",
@@ -131,6 +139,7 @@
     ],
     techStack: [
       { category: "Automation", items: ["Python", "openpyxl", "SQLAlchemy", "SQLite", "PyYAML"] },
+      { category: "Crawling / Data", items: ["Playwright CLI", "Browser Automation", "DOM Parsing", "CSV Cleaning"] },
       { category: "Web / Deploy", items: ["HTML", "CSS", "Jinja2", "FastAPI", "GitHub Actions", "GitHub Pages"] },
       { category: "Desktop / Local AI", items: ["Tkinter", "PySide6", "faster-whisper", "FFmpeg", "PyInstaller"] },
       { category: "Testing / Quality", items: ["unittest", "pytest", "Logging", "Layered Architecture"] }
