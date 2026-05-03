@@ -27,7 +27,7 @@
     var raw = window.PortfolioData || {};
 
     if (!isObject(raw) || Object.keys(raw).length === 0) {
-      warn("포트폴리오 데이터가 없습니다. 기본값으로 렌더링합니다.");
+      warn("학습 기록 데이터가 없습니다. 기본값으로 렌더링합니다.");
       raw = {};
     }
 
@@ -47,8 +47,8 @@
       navigation: asArray(raw.navigation, "navigation"),
       profile: {
         name: profile.name || "YHJO",
-        role: profile.role || "개발자",
-        tagline: profile.tagline || "포트폴리오 내용을 준비하고 있습니다.",
+        role: profile.role || "개발 학습 기록",
+        tagline: profile.tagline || "학습과 실습 내용을 기록합니다.",
         intro: profile.intro || "",
         availability: profile.availability || "",
         location: profile.location || "",
@@ -60,7 +60,7 @@
       projects: asArray(raw.projects, "projects").filter(function (project) {
         var isValid = isObject(project) && project.name;
         if (!isValid) {
-          warn("프로젝트명이 없는 항목은 건너뜁니다.", project);
+          warn("이름이 없는 학습 기록은 건너뜁니다.", project);
         }
         return isValid;
       }),

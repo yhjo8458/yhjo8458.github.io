@@ -3,137 +3,137 @@
 
   window.PortfolioData = {
     meta: {
-      title: "YHJO | 개발자 포트폴리오",
-      description: "업무 자동화, 정적 웹 서비스, 로컬 AI 도구를 만드는 개발자 포트폴리오입니다."
+      title: "YHJO | 학습 실습 기록",
+      description: "개발 학습과 실습에서 얻은 내용을 정리하고 재사용 가능한 지식으로 남기는 기록 웹사이트입니다."
     },
     navigation: [
       { id: "about", label: "소개" },
-      { id: "projects", label: "프로젝트" },
-      { id: "process", label: "작업 방식" },
+      { id: "projects", label: "학습 기록" },
+      { id: "process", label: "정리 방식" },
       { id: "tech", label: "기술" },
       { id: "contact", label: "연락" }
     ],
     profile: {
       name: "YHJO",
-      role: "개발자",
-      tagline: "반복 업무를 줄이고, 실제로 운영할 수 있는 자동화 도구와 웹 서비스를 만듭니다.",
-      intro: "Python, GitHub Actions, Windows 데스크톱 자동화, 로컬 AI 도구를 중심으로 문제를 구조화하고 유지보수 가능한 결과물을 만드는 데 집중합니다.",
-      availability: "업무 자동화와 웹 서비스 프로젝트를 정리하고 있습니다",
+      role: "개발 학습 기록",
+      tagline: "프로젝트를 만들며 배운 내용을 정리하고, 다음 실습에서 다시 사용할 수 있는 지식으로 남깁니다.",
+      intro: "이 사이트는 홍보용 포트폴리오보다 학습과 실습의 과정을 기록하는 공간입니다. 자동화, 정적 웹 배포, Windows 도구, 로컬 AI 실습에서 중요하게 기억할 내용을 프로젝트 단위로 정리합니다.",
+      availability: "학습 내용과 실습 기록을 계속 업데이트합니다",
       location: "대한민국",
       ctas: [
-        { label: "프로젝트 보기", href: "#projects", variant: "primary" },
-        { label: "문의하기", href: "#contact", variant: "secondary" }
+        { label: "학습 기록 보기", href: "#projects", variant: "primary" },
+        { label: "정리 방식 보기", href: "#process", variant: "secondary" }
       ]
     },
     heroPanel: [
-      { label: "관심 분야", value: "업무 자동화 / 정적 웹 서비스 / 로컬 AI 도구" },
-      { label: "작업 방식", value: "계층 분리, 설정 중심 구조, 테스트 가능한 서비스 로직" },
-      { label: "대표 경험", value: "GitHub Pages 배포, Windows GUI, STT 변환 자동화" }
+      { label: "기록 목적", value: "실습 과정에서 배운 내용을 다시 사용할 수 있게 정리" },
+      { label: "주요 주제", value: "Python 자동화 / GitHub Actions / Windows 배포 / 로컬 AI" },
+      { label: "정리 기준", value: "문제, 구현 방식, 기억할 점, 다음에 재사용할 포인트" }
     ],
     sections: {
       about: {
         eyebrow: "소개",
-        title: "반복되는 업무를 구조화하고, 자동화 가능한 도구로 바꿉니다.",
-        description: "실사용 흐름을 기준으로 UI, Controller, Service, Infrastructure를 분리하고, 설정과 데이터를 코드 밖에서 관리할 수 있는 구조를 선호합니다."
+        title: "완성 결과보다, 다시 써먹을 수 있는 학습 내용을 남깁니다.",
+        description: "각 프로젝트는 기능 설명보다 실습 중 배운 설계 판단, 자동화 흐름, 오류 처리, 배포 경험을 중심으로 정리합니다."
       },
       projects: {
-        eyebrow: "대표 프로젝트",
-        title: "직접 진행한 자동화와 웹 서비스 프로젝트입니다.",
-        description: "금융 리포트 자동 생성, Windows 업무 문서 자동화, 로컬 음성 인식 도구처럼 실제 반복 업무를 줄이는 프로젝트를 중심으로 정리했습니다."
+        eyebrow: "학습 및 실습 기록",
+        title: "프로젝트를 통해 익힌 핵심 내용을 기록합니다.",
+        description: "아래 기록은 추후 다른 프로젝트에서도 활용할 수 있도록 구현 포인트와 재사용 가능한 교훈을 중심으로 작성했습니다."
       },
       process: {
-        eyebrow: "작업 방식",
-        title: "요구사항부터 배포까지 흐름을 나누어 진행합니다.",
-        description: "먼저 데이터 흐름과 예외 상황을 확인하고, 핵심 로직은 UI 없이도 테스트할 수 있도록 분리합니다."
+        eyebrow: "정리 방식",
+        title: "실습 내용을 구조화해서 다음 작업의 기준으로 만듭니다.",
+        description: "단순히 무엇을 만들었는지가 아니라 왜 그렇게 나눴는지, 어떤 문제가 있었는지, 다음에는 무엇을 재사용할지를 기록합니다."
       },
       tech: {
-        eyebrow: "기술 스택",
-        title: "자동화, 웹 배포, 데스크톱 도구를 연결합니다.",
-        description: "Python 기반 업무 자동화와 GitHub Actions 배포, Windows 환경 배포, 로컬 AI 실행 흐름을 다룹니다."
+        eyebrow: "학습 기술",
+        title: "반복 실습으로 익힌 기술을 주제별로 정리합니다.",
+        description: "자동화, 웹 배포, 데스크톱 GUI, 로컬 AI, 테스트와 배포 흐름을 나누어 관리합니다."
       },
       contact: {
         eyebrow: "연락",
-        title: "프로젝트나 협업 이야기를 나눌 수 있습니다.",
-        description: "아래 이메일과 프로필 링크는 실제 연락처로 교체해서 사용할 수 있습니다."
+        title: "학습 기록과 프로젝트 내용을 계속 갱신합니다.",
+        description: "아래 링크는 실제 연락처나 학습 채널로 교체해서 사용할 수 있습니다."
       }
     },
     highlights: [
       {
-        title: "업무 자동화",
-        text: "반복되는 조회, 문서 작성, 파일 저장 흐름을 자동화해 수작업 시간을 줄이는 도구를 만듭니다."
+        title: "실습 중심 기록",
+        text: "코드를 작성하며 직접 겪은 문제, 해결 과정, 배포 결과를 프로젝트 단위로 남깁니다."
       },
       {
-        title: "운영 가능한 구조",
-        text: "설정 파일, 저장소 계층, 서비스 로직, 배포 흐름을 분리해 나중에 수정하기 쉬운 형태로 설계합니다."
+        title: "재사용 가능한 지식",
+        text: "다음 프로젝트에서 바로 참고할 수 있도록 설정, 계층 구조, 예외 처리, 배포 흐름을 정리합니다."
       },
       {
-        title: "검증과 배포",
-        text: "단위 테스트와 GitHub Actions를 활용해 변경사항을 확인하고 GitHub Pages나 실행 파일 형태로 배포합니다."
+        title: "운영 경험 축적",
+        text: "GitHub Actions, GitHub Pages, PyInstaller, 로컬 실행 환경처럼 실제 운영에 가까운 흐름을 반복 학습합니다."
       }
     ],
     projects: [
       {
         name: "Daily Finance Briefing",
-        problem: "국내외 지수, 환율, 원자재처럼 매일 확인해야 하는 금융 시장 정보를 수동으로 조회하면 시간이 들고 기준일과 리포트 형식이 일관되지 않을 수 있었습니다.",
-        solution: "FinanceDataReader로 주요 시장 데이터를 수집하고, Python 서비스 계층에서 전일 기준 데이터를 가공한 뒤 Jinja2 템플릿으로 카드형 HTML 리포트를 생성했습니다. 종목 목록과 리포트 메타 정보는 YAML 설정으로 분리하고 GitHub Actions로 테스트, 스케줄 실행, GitHub Pages 배포까지 자동화했습니다.",
-        result: "평일 오전 10시(KST) 기준으로 reports/YYYY-MM-DD.html, latest.html, index.html 리포트를 자동 생성하고 GitHub Pages에 배포하는 배치형 정적 웹 서비스 흐름을 구성했습니다. 일부 데이터 조회 실패 시에도 전체 리포트 생성을 유지하고 카드 단위 오류로 표시하도록 설계했습니다.",
+        problem: "FinanceDataReader로 시장 데이터를 수집하고 GitHub Actions로 매일 리포트를 생성하며, 정적 사이트도 배치형 서비스처럼 운영할 수 있는지 실습했습니다.",
+        solution: "Controller, Service, Domain, Infrastructure로 역할을 나누고 YAML 설정으로 종목과 리포트 메타 정보를 관리했습니다. Jinja2 템플릿으로 reports/YYYY-MM-DD.html, latest.html, index.html을 생성하고 GitHub Pages 배포까지 연결했습니다.",
+        result: "정적 사이트도 데이터 수집, 가공, HTML 생성, artifact 보관, Pages 배포 흐름을 갖추면 운영형 자동화 서비스처럼 구성할 수 있다는 점을 학습했습니다. 일부 데이터 조회 실패 시 전체 생성을 중단하지 않고 카드 단위 오류로 처리하는 방식도 기억할 포인트입니다.",
         tech: ["Python", "FinanceDataReader", "Jinja2", "PyYAML", "GitHub Actions", "GitHub Pages"],
         link: "https://yhjo8458.github.io/daily_finance_briefing/"
       },
       {
         name: "업무 문서 자동화 데스크톱 프로그램",
-        problem: "현업에서 점검 문서와 지원내역서를 반복적으로 작성해야 했고, 고객사 정보와 작업 이력이 파일이나 수작업 중심으로 흩어져 관리되어 문서 작성 시간과 누락 가능성이 컸습니다.",
-        solution: "Python Tkinter 기반 GUI를 만들고 openpyxl로 엑셀 템플릿을 자동 가공해 점검 문서와 지원내역서를 생성하도록 구현했습니다. 고객사 정보와 작업 이력은 SQLAlchemy와 SQLite로 관리하고, Excel/PDF 산출, 설정 파일, 템플릿 경로를 분리했습니다.",
-        result: "반복적인 엑셀 문서 작성 시간을 줄이고 고객사 정보 조회, 수정, 삭제, 문서 생성 이력, 작업 로그를 한 프로그램에서 관리할 수 있게 했습니다. UI, Controller, Service, Repository, Infrastructure 계층을 분리해 유지보수성과 테스트 가능성을 높였습니다.",
+        problem: "Windows 환경에서 반복되는 엑셀 문서 작성과 고객사 정보 관리를 자동화하면서, GUI 프로그램도 유지보수 가능한 계층 구조로 만들 수 있는지 실습했습니다.",
+        solution: "Tkinter UI에서 직접 엑셀이나 DB를 다루지 않고 Event Handler, Controller, Service, Repository, Infrastructure로 흐름을 분리했습니다. openpyxl, SQLAlchemy, SQLite, pywin32, settings.json, 템플릿 파일을 각각 책임에 맞게 나누었습니다.",
+        result: "데스크톱 자동화 도구에서도 UI와 비즈니스 로직을 분리해야 테스트와 확장이 쉬워진다는 점을 확인했습니다. Excel/PDF 산출, 고객사 중복 검증, 작업 로그, PyInstaller 배포 고려는 이후 Windows 업무 도구에서 다시 사용할 수 있는 중요한 패턴입니다.",
         tech: ["Python", "Tkinter", "openpyxl", "SQLAlchemy", "SQLite", "pywin32", "PyInstaller"],
         link: ""
       },
       {
         name: "Clova Note Vibe",
-        problem: "음성 파일을 텍스트로 변환할 때 외부 API 전송 없이 로컬 PC에서 안전하게 처리하고, Windows GUI와 Web UI 양쪽에서 같은 STT 로직을 재사용할 수 있는 구조가 필요했습니다.",
-        solution: "faster-whisper 기반 TranscriptionService를 UI와 독립적으로 구현하고, PySide6 GUI와 FastAPI Web UI가 같은 서비스 계층을 사용하도록 분리했습니다. FFmpeg 실행 가능 여부 확인, 변환 로그 저장, 중복 파일명 처리, 업로드 원본 보관 옵션을 Infrastructure 계층으로 나눴습니다.",
-        result: "Windows exe GUI 앱과 로컬 Web UI 파일 업로드 방식을 모두 지원하고, Web API 기반 비동기 작업 처리와 진행률 polling/progress bar를 구현했습니다. PyInstaller 배포 시 faster-whisper VAD ONNX asset 누락 문제와 WinGet FFmpeg 탐지 문제를 해결했으며 pytest 기준 13개 테스트를 통과했습니다.",
+        problem: "외부 API 없이 로컬 PC에서 음성 파일을 텍스트로 변환하고, 같은 STT 핵심 로직을 Windows GUI와 Web UI에서 재사용하는 구조를 실습했습니다.",
+        solution: "faster-whisper 기반 TranscriptionService를 UI와 분리하고 PySide6 GUI와 FastAPI Web UI가 같은 Service를 사용하도록 설계했습니다. FFmpeg 확인, 파일 저장, 로그, Whisper 실행, 업로드 옵션은 Infrastructure 계층으로 분리했습니다.",
+        result: "로컬 AI 도구는 모델 실행 자체보다 실행 환경 점검, FFmpeg 탐지, 진행률 표시, 중복 파일명 처리, PyInstaller asset 포함이 중요하다는 점을 배웠습니다. Web API 비동기 작업, polling, progress bar, pytest 기반 API 테스트는 이후 로컬 도구 웹화에 재사용할 수 있습니다.",
         tech: ["Python 3.12", "FastAPI", "PySide6", "faster-whisper", "FFmpeg", "PyInstaller", "pytest"],
         link: ""
       }
     ],
     services: [
       {
-        title: "업무 자동화 도구",
-        text: "반복 입력, 문서 생성, 파일 저장, 로그 관리 흐름을 줄이는 도구를 설계하고 구현합니다."
+        title: "자동화 실습",
+        text: "반복 업무를 데이터 흐름과 실행 단계로 나누고 자동화 가능한 단위로 바꾸는 과정을 기록합니다."
       },
       {
-        title: "정적 웹 서비스와 배포 자동화",
-        text: "GitHub Actions와 GitHub Pages를 활용해 데이터 생성부터 정적 웹 배포까지 자동화합니다."
+        title: "배포 실습",
+        text: "GitHub Actions, artifact, GitHub Pages, 스케줄 실행처럼 배포와 운영 흐름을 직접 적용합니다."
       },
       {
-        title: "Windows 로컬 도구",
-        text: "Tkinter, PySide6, PyInstaller를 활용해 실제 Windows 환경에서 실행 가능한 도구를 만듭니다."
+        title: "로컬 도구 실습",
+        text: "Windows GUI, PyInstaller, FFmpeg, 로컬 모델 실행처럼 PC 환경에서 발생하는 문제를 정리합니다."
       }
     ],
     process: [
       {
-        title: "문제 정리",
-        text: "반복되는 업무 흐름, 입력 데이터, 산출물, 실패 지점을 먼저 확인합니다."
+        title: "문제 정의",
+        text: "실습에서 해결하려는 반복 작업, 입력 데이터, 출력 결과, 실패 지점을 먼저 정리합니다."
       },
       {
-        title: "구조 설계",
-        text: "UI, Controller, Service, Repository, Infrastructure 역할을 나누고 변경 가능한 지점을 분리합니다."
+        title: "구조 분리",
+        text: "UI, Controller, Service, Repository, Infrastructure 역할을 나누고 핵심 로직을 테스트 가능하게 만듭니다."
       },
       {
-        title: "작게 구현",
-        text: "핵심 흐름부터 동작하게 만들고 실제 사용 기준으로 예외 처리와 설정을 보강합니다."
+        title: "구현 기록",
+        text: "구현 중 만난 오류, 설정 문제, 배포 문제, 우회 방법을 다음 실습에서 참고할 수 있게 남깁니다."
       },
       {
-        title: "검증과 배포",
-        text: "단위 테스트, 로컬 실행, GitHub Actions, PyInstaller 같은 배포 흐름까지 확인합니다."
+        title: "재사용 정리",
+        text: "다음 프로젝트에서 다시 쓸 수 있는 패턴, 명령어, 설정, 테스트 관점을 별도로 기록합니다."
       }
     ],
     techStack: [
       { category: "Automation", items: ["Python", "openpyxl", "SQLAlchemy", "SQLite", "PyYAML"] },
       { category: "Web / Deploy", items: ["HTML", "CSS", "Jinja2", "FastAPI", "GitHub Actions", "GitHub Pages"] },
       { category: "Desktop / Local AI", items: ["Tkinter", "PySide6", "faster-whisper", "FFmpeg", "PyInstaller"] },
-      { category: "Quality", items: ["unittest", "pytest", "Logging", "Layered Architecture"] }
+      { category: "Testing / Quality", items: ["unittest", "pytest", "Logging", "Layered Architecture"] }
     ],
     contact: {
       email: "your.email@example.com",
@@ -144,13 +144,13 @@
       ]
     },
     labels: {
-      projectProblem: "문제",
-      projectSolution: "해결",
-      projectResult: "결과",
-      projectLink: "프로젝트 보기"
+      projectProblem: "학습 주제",
+      projectSolution: "구현 정리",
+      projectResult: "기억할 점",
+      projectLink: "실습 결과 보기"
     },
     emptyMessages: {
-      projects: "표시할 프로젝트가 없습니다. portfolio-data.js에서 projects를 추가하세요.",
+      projects: "표시할 학습 기록이 없습니다. portfolio-data.js에서 projects를 추가하세요.",
       links: "표시할 링크가 없습니다."
     }
   };
