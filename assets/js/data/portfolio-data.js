@@ -119,6 +119,14 @@
         result: "로컬 AI 도구는 모델 실행 자체보다 실행 환경 점검, FFmpeg 탐지, 진행률 표시, 중복 파일명 처리, PyInstaller asset 포함이 중요하다는 점을 배웠습니다. Web API 비동기 작업, polling, progress bar, pytest 기반 API 테스트는 이후 로컬 도구 웹화에 재사용할 수 있습니다.",
         tech: ["Python 3.12", "FastAPI", "PySide6", "faster-whisper", "FFmpeg", "PyInstaller", "pytest"],
         link: ""
+      },
+      {
+        name: "Codex를 활용한 PPT 자동 생성",
+        problem: "Codex를 코드 작성 도구로만 쓰는 것이 아니라, 발표 자료 같은 문서 산출물 제작에도 활용할 수 있는지 실습했습니다. Claude Code 대비 Codex의 장점을 설명하는 3장짜리 PPTX 자료를 만들고 디자인, 렌더링, 파일 검증까지 경험했습니다.",
+        solution: "Node.js와 @oai/artifact-tool을 활용해 PowerPoint PPTX 파일을 생성하고, Color Hunt 팔레트 기반 색상 토큰으로 슬라이드 톤을 관리했습니다. PPTX 생성 후 PNG 미리보기를 렌더링해 시각적으로 확인하고, PowerPoint 복구 경고 원인이 될 수 있는 PPTX 내부 XML 관계와 패키지 구조를 점검했습니다.",
+        result: "Codex가 코드뿐 아니라 PPTX 생성, 발표 문구 정리, 디자인 팔레트 반영, PNG 미리보기 생성, 오류 원인 분석에도 활용될 수 있다는 점을 배웠습니다. PPTX는 단순 파일이 아니라 여러 XML과 관계 파일로 구성된 패키지이므로 생성 후 미리보기와 관계 검증이 필요하고, Windows에서는 PowerPoint가 파일을 열고 있으면 덮어쓰기가 실패할 수 있다는 점을 기억할 내용으로 정리했습니다.",
+        tech: ["Codex", "PowerPoint", "Node.js", "@oai/artifact-tool", "PowerShell", "Color Hunt", "PPTX Validation"],
+        link: ""
       }
     ],
     services: [
@@ -160,6 +168,7 @@
       { category: "Web / Deploy", items: ["HTML", "CSS", "Jinja2", "FastAPI", "Next.js", "React", "GitHub Actions", "GitHub Pages"] },
       { category: "Realtime / API", items: ["WebSocket", "httpx", "Exchange API", "REST Fallback", "Caching"] },
       { category: "Desktop / Local AI", items: ["Tkinter", "PySide6", "faster-whisper", "FFmpeg", "PyInstaller"] },
+      { category: "Document Automation", items: ["Codex", "PowerPoint", "PPTX", "@oai/artifact-tool", "Color Hunt"] },
       { category: "Testing / Quality", items: ["unittest", "pytest", "Vitest", "TypeScript Typecheck", "Logging", "Layered Architecture"] }
     ],
     contact: {
