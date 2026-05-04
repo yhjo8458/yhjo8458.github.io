@@ -81,6 +81,14 @@
         link: "https://yhjo8458.github.io/daily_finance_briefing/"
       },
       {
+        name: "실시간 암호화폐 선물 Funding Fee 대시보드",
+        problem: "여러 암호화폐 선물 거래소의 USDT 무기한 선물 펀딩비를 한 화면에서 비교하며, 실시간 데이터 수집과 거래소별 API 차이를 다루는 풀스택 대시보드 구조를 실습했습니다.",
+        solution: "Next.js, React, TypeScript, Tailwind CSS로 UI를 구성하고 FastAPI 백엔드에서 Binance, OKX, Bybit, Bitget, Gate public API 데이터를 수집하도록 분리했습니다. 거래소별 응답 형식은 adapter 구조로 정규화하고, 전체 티커 union 기준으로 미지원 종목은 unsupported 상태로 관리했습니다. WebSocket 우선 흐름에 REST fallback/cache를 두고 검색, 시가총액 정렬, localStorage 즐겨찾기, 펀딩비 괴리 Top 5를 구현했습니다.",
+        result: "검증 시점 기준 5개 거래소, 약 617개 티커, 3,000개 이상의 거래소별 셀 데이터를 처리했습니다. 실시간 데이터에서는 live, stale, error, unsupported 같은 상태 관리가 중요하고, 거래소마다 심볼 표기, 펀딩 주기, API 응답 구조가 다르므로 정규화 계층이 필요하다는 점을 학습했습니다. 대량 티커 수집에는 캐시, 병렬 요청 제한, rate limit 대응, dev/build 실행 환경 분리가 중요하다는 점도 기억할 내용입니다.",
+        tech: ["Next.js", "React", "TypeScript", "Tailwind CSS", "FastAPI", "WebSocket", "httpx", "Vitest", "pytest"],
+        link: ""
+      },
+      {
         name: "네이버 블로그 검색 결과 크롤링",
         problem: "네이버 블로그 검색 결과처럼 스크롤에 따라 추가 데이터가 로드되는 동적 페이지에서 특정 키워드의 글 목록을 끝까지 수집하고, 활용 가능한 CSV 데이터로 정리하는 흐름을 실습했습니다.",
         solution: "Playwright CLI로 실제 브라우저를 제어해 검색 결과 페이지에 접속하고, DOM 구조를 확인한 뒤 결과 컨테이너 기준으로 제목, 출처명, 출처 유형, 출처 주소, 블로그 ID, 발행일, URL을 추출했습니다. 페이지 높이와 결과 수가 더 이상 변하지 않을 때까지 반복 스크롤한 뒤 CSV로 저장하고, 수집 기준일인 2026.05.03 기준으로 상대 날짜를 YYYY.MM.DD 형식으로 변환했습니다.",
@@ -140,9 +148,10 @@
     techStack: [
       { category: "Automation", items: ["Python", "openpyxl", "SQLAlchemy", "SQLite", "PyYAML"] },
       { category: "Crawling / Data", items: ["Playwright CLI", "Browser Automation", "DOM Parsing", "CSV Cleaning"] },
-      { category: "Web / Deploy", items: ["HTML", "CSS", "Jinja2", "FastAPI", "GitHub Actions", "GitHub Pages"] },
+      { category: "Web / Deploy", items: ["HTML", "CSS", "Jinja2", "FastAPI", "Next.js", "React", "GitHub Actions", "GitHub Pages"] },
+      { category: "Realtime / API", items: ["WebSocket", "httpx", "Exchange API", "REST Fallback", "Caching"] },
       { category: "Desktop / Local AI", items: ["Tkinter", "PySide6", "faster-whisper", "FFmpeg", "PyInstaller"] },
-      { category: "Testing / Quality", items: ["unittest", "pytest", "Logging", "Layered Architecture"] }
+      { category: "Testing / Quality", items: ["unittest", "pytest", "Vitest", "TypeScript Typecheck", "Logging", "Layered Architecture"] }
     ],
     contact: {
       email: "your.email@example.com",
