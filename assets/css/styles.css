@@ -1,11 +1,11 @@
 :root {
   color-scheme: light;
-  --bg: #f8de22;
-  --surface: #fffdf2;
+  --bg: #ffffff;
+  --surface: #ffffff;
   --surface-muted: #f8de22;
   --text: #3b1020;
   --muted: #704757;
-  --line: #efc96f;
+  --line: #f3d9a5;
   --accent: #03aed2;
   --accent-strong: #027d98;
   --accent-warm: #d12052;
@@ -81,7 +81,7 @@ button {
   top: 0;
   z-index: 20;
   min-height: var(--header-height);
-  background: rgba(248, 222, 34, 0.9);
+  background: rgba(255, 255, 255, 0.92);
   border-bottom: 1px solid rgba(3, 174, 210, 0.32);
   backdrop-filter: blur(18px);
 }
@@ -128,7 +128,7 @@ button {
 }
 
 .section.muted {
-  background: rgba(3, 174, 210, 0.12);
+  background: rgba(3, 174, 210, 0.08);
   border-block: 1px solid rgba(3, 174, 210, 0.24);
 }
 
@@ -202,9 +202,9 @@ button {
 }
 
 .hero-panel {
-  border: 1px solid var(--line);
+  border: 1px solid rgba(3, 174, 210, 0.28);
   border-radius: var(--radius);
-  background: rgba(255, 253, 242, 0.9);
+  background: rgba(255, 255, 255, 0.92);
   box-shadow: var(--shadow);
   overflow: hidden;
 }
@@ -261,7 +261,7 @@ button {
 
 .card {
   min-width: 0;
-  border: 1px solid var(--line);
+  border: 1px solid rgba(3, 174, 210, 0.22);
   border-radius: var(--radius);
   background: var(--surface);
   padding: 20px;
@@ -288,7 +288,7 @@ button {
 .highlight {
   padding: 16px;
   border-left: 3px solid var(--accent-warm);
-  background: var(--surface);
+  background: rgba(248, 222, 34, 0.14);
 }
 
 .project-card {
@@ -357,7 +357,7 @@ button {
   position: relative;
   display: grid;
   gap: 6px;
-  border: 1px solid var(--line);
+  border: 1px solid rgba(3, 174, 210, 0.22);
   border-radius: var(--radius);
   background: var(--surface);
   padding: 18px 18px 18px 58px;
