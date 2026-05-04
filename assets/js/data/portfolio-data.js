@@ -97,6 +97,14 @@
         link: ""
       },
       {
+        name: "네이버 키워드 분석 웹사이트",
+        problem: "네이버 공식 API로 키워드 검색량, 콘텐츠 검색 결과 수, 검색 추이, 연관 키워드를 분석하면서 API가 반환하는 숫자의 의미와 한계를 구분하고, 사용자가 지표를 오해하지 않도록 표현을 설계하는 과정을 실습했습니다.",
+        solution: "FastAPI, Jinja2, Chart.js, SQLite 기반 로컬 웹 도구로 구성하고 UI, Controller, Service, Repository, Domain, Infrastructure 계층을 분리했습니다. 네이버 검색광고 API, 검색 API, 데이터랩 API 호출은 Infrastructure로 분리하고 API 키는 .env에서 관리했습니다. Service 계층에서 최근 30일 PC/Mobile 검색량, 블로그/카페 검색 결과 수, 성인 키워드 여부, 데이터랩 월별 추이, 연관 키워드, 자체 등급을 계산했습니다.",
+        result: "API 데이터는 값보다 의미 정의가 중요하다는 점을 학습했습니다. 검색광고 API 검색량은 최근 30일 검색량이고, 검색 API total은 콘텐츠 발행량이 아니라 검색 결과 총 개수이며, 데이터랩 ratio는 실제 검색량이 아니라 상대지수입니다. 따라서 콘텐츠 발행량보다 콘텐츠 검색 결과 수, 콘텐츠 포화 지수보다 검색결과 경쟁도처럼 지표명을 바꾸고 추정치와 원본값을 구분해야 한다는 점을 기억할 내용으로 정리했습니다.",
+        tech: ["FastAPI", "Jinja2", "Chart.js", "SQLite", "httpx", "pytest", "Naver API"],
+        link: ""
+      },
+      {
         name: "업무 문서 자동화 데스크톱 프로그램",
         problem: "Windows 환경에서 반복되는 엑셀 문서 작성과 고객사 정보 관리를 자동화하면서, GUI 프로그램도 유지보수 가능한 계층 구조로 만들 수 있는지 실습했습니다.",
         solution: "Tkinter UI에서 직접 엑셀이나 DB를 다루지 않고 Event Handler, Controller, Service, Repository, Infrastructure로 흐름을 분리했습니다. openpyxl, SQLAlchemy, SQLite, pywin32, settings.json, 템플릿 파일을 각각 책임에 맞게 나누었습니다.",
@@ -148,6 +156,7 @@
     techStack: [
       { category: "Automation", items: ["Python", "openpyxl", "SQLAlchemy", "SQLite", "PyYAML"] },
       { category: "Crawling / Data", items: ["Playwright CLI", "Browser Automation", "DOM Parsing", "CSV Cleaning"] },
+      { category: "External API / Analytics", items: ["Naver API", "DataLab", "Search Ads API", "Chart.js", "Metric Design"] },
       { category: "Web / Deploy", items: ["HTML", "CSS", "Jinja2", "FastAPI", "Next.js", "React", "GitHub Actions", "GitHub Pages"] },
       { category: "Realtime / API", items: ["WebSocket", "httpx", "Exchange API", "REST Fallback", "Caching"] },
       { category: "Desktop / Local AI", items: ["Tkinter", "PySide6", "faster-whisper", "FFmpeg", "PyInstaller"] },
