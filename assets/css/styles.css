@@ -1,16 +1,17 @@
 :root {
   color-scheme: light;
-  --bg: #f6f3c2;
-  --surface: #fffdf0;
-  --surface-muted: #e9e4ae;
-  --text: #3e2c23;
-  --muted: #6f6156;
-  --line: #d8cf93;
-  --accent: #4b9da9;
-  --accent-strong: #2f717b;
-  --accent-warm: #e37434;
-  --accent-soft: #d8eee9;
-  --shadow: 0 18px 45px rgba(62, 44, 35, 0.12);
+  --bg: #fff8d6;
+  --surface: #fffdf2;
+  --surface-muted: #f8de22;
+  --text: #3b1020;
+  --muted: #704757;
+  --line: #efc96f;
+  --accent: #03aed2;
+  --accent-strong: #027d98;
+  --accent-warm: #d12052;
+  --accent-hot: #f45b26;
+  --accent-soft: #dff8fd;
+  --shadow: 0 18px 45px rgba(209, 32, 82, 0.12);
   --radius: 8px;
   --header-height: 72px;
   font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
@@ -39,8 +40,8 @@ body::before {
   inset: 0;
   pointer-events: none;
   background:
-    linear-gradient(90deg, rgba(75, 157, 169, 0.13) 1px, transparent 1px),
-    linear-gradient(rgba(227, 116, 52, 0.1) 1px, transparent 1px);
+    linear-gradient(90deg, rgba(3, 174, 210, 0.14) 1px, transparent 1px),
+    linear-gradient(rgba(244, 91, 38, 0.1) 1px, transparent 1px);
   background-size: 48px 48px;
   mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.55), transparent 72%);
 }
@@ -80,8 +81,8 @@ button {
   top: 0;
   z-index: 20;
   min-height: var(--header-height);
-  background: rgba(246, 243, 194, 0.9);
-  border-bottom: 1px solid rgba(75, 157, 169, 0.32);
+  background: rgba(255, 248, 214, 0.92);
+  border-bottom: 1px solid rgba(3, 174, 210, 0.32);
   backdrop-filter: blur(18px);
 }
 
@@ -127,8 +128,8 @@ button {
 }
 
 .section.muted {
-  background: rgba(145, 198, 188, 0.26);
-  border-block: 1px solid rgba(75, 157, 169, 0.28);
+  background: rgba(3, 174, 210, 0.12);
+  border-block: 1px solid rgba(3, 174, 210, 0.24);
 }
 
 .hero {
@@ -191,9 +192,9 @@ button {
 }
 
 .button.secondary {
-  border-color: var(--accent);
+  border-color: var(--accent-hot);
   background: var(--surface);
-  color: var(--accent-strong);
+  color: var(--accent-warm);
 }
 
 .button:hover {
@@ -203,7 +204,7 @@ button {
 .hero-panel {
   border: 1px solid var(--line);
   border-radius: var(--radius);
-  background: rgba(255, 253, 240, 0.86);
+  background: rgba(255, 253, 242, 0.9);
   box-shadow: var(--shadow);
   overflow: hidden;
 }
@@ -330,10 +331,10 @@ button {
   justify-content: center;
   min-height: 30px;
   max-width: 100%;
-  border: 1px solid var(--line);
+  border: 1px solid rgba(209, 32, 82, 0.22);
   border-radius: 999px;
   padding: 4px 10px;
-  background: var(--surface-muted);
+  background: rgba(248, 222, 34, 0.52);
   color: var(--text);
   font-size: 0.84rem;
   font-weight: 700;
@@ -373,7 +374,7 @@ button {
   display: grid;
   place-items: center;
   border-radius: 50%;
-  background: var(--accent);
+  background: var(--accent-hot);
   color: #fff;
   font-size: 0.86rem;
   font-weight: 850;
@@ -389,7 +390,7 @@ button {
   gap: 20px;
   border: 1px solid var(--line);
   border-radius: var(--radius);
-  background: var(--accent-strong);
+  background: var(--accent-warm);
   color: #fff;
   padding: clamp(22px, 6vw, 34px);
 }
