@@ -1,6 +1,6 @@
 :root {
   color-scheme: light;
-  --bg: #fff8d6;
+  --bg: #f8de22;
   --surface: #fffdf2;
   --surface-muted: #f8de22;
   --text: #3b1020;
@@ -81,7 +81,7 @@ button {
   top: 0;
   z-index: 20;
   min-height: var(--header-height);
-  background: rgba(255, 248, 214, 0.92);
+  background: rgba(248, 222, 34, 0.9);
   border-bottom: 1px solid rgba(3, 174, 210, 0.32);
   backdrop-filter: blur(18px);
 }

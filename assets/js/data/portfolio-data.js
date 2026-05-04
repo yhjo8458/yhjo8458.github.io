@@ -89,6 +89,14 @@
         link: ""
       },
       {
+        name: "Upbit 신규상장 코인 Binance Futures 가격 분석 리포트 생성기",
+        problem: "Upbit KRW 마켓에 최근 1년간 신규 상장된 코인을 수집하고, 상장 직후와 이후 가격 변화를 Binance USD-M Futures 가격 기준으로 분석하는 CLI 리포트 생성 흐름을 실습했습니다.",
+        solution: "argparse 기반 Python CLI로 Upbit 거래 공지 API에서 최근 365일 신규상장 공지를 수집하고, 공지 상세 본문에서 ticker, 자산명, KRW 마켓 여부, 거래지원 개시 시각을 파싱했습니다. Binance Futures REST API에서 {TICKER}USDT 무기한 선물 가격을 조회해 1/3/6/9/12시간 단기 수익률과 1/7/30/90/180일 일봉 수익률을 계산하고, Decimal과 dataclasses 기반 모델로 통계와 제외 사유를 self-contained HTML 리포트에 렌더링했습니다.",
+        result: "최근 실행 기준 Upbit 거래 공지 168개, 신규상장 이벤트 96개, 분석 가능 ticker 80개, 제외/누락 18개를 처리했고 단위 테스트 9개를 통과했습니다. 금융 데이터는 KST 공지 시각과 Binance UTC 1d candle close 기준 차이를 명확히 해야 하며, Upbit 현물 가격이 아니라 Binance USD-M Futures 가격 기준이라는 점을 리포트에 분명히 남겨야 한다는 점을 학습했습니다.",
+        tech: ["Python", "argparse", "dataclasses", "Decimal", "Upbit API", "Binance Futures API", "unittest", "HTML/CSS/SVG"],
+        link: ""
+      },
+      {
         name: "네이버 블로그 검색 결과 크롤링",
         problem: "네이버 블로그 검색 결과처럼 스크롤에 따라 추가 데이터가 로드되는 동적 페이지에서 특정 키워드의 글 목록을 끝까지 수집하고, 활용 가능한 CSV 데이터로 정리하는 흐름을 실습했습니다.",
         solution: "Playwright CLI로 실제 브라우저를 제어해 검색 결과 페이지에 접속하고, DOM 구조를 확인한 뒤 결과 컨테이너 기준으로 제목, 출처명, 출처 유형, 출처 주소, 블로그 ID, 발행일, URL을 추출했습니다. 페이지 높이와 결과 수가 더 이상 변하지 않을 때까지 반복 스크롤한 뒤 CSV로 저장하고, 수집 기준일인 2026.05.03 기준으로 상대 날짜를 YYYY.MM.DD 형식으로 변환했습니다.",
@@ -165,6 +173,7 @@
       { category: "Automation", items: ["Python", "openpyxl", "SQLAlchemy", "SQLite", "PyYAML"] },
       { category: "Crawling / Data", items: ["Playwright CLI", "Browser Automation", "DOM Parsing", "CSV Cleaning"] },
       { category: "External API / Analytics", items: ["Naver API", "DataLab", "Search Ads API", "Chart.js", "Metric Design"] },
+      { category: "Financial Data", items: ["Upbit API", "Binance Futures API", "Decimal", "CLI Report", "HTML/CSS/SVG"] },
       { category: "Web / Deploy", items: ["HTML", "CSS", "Jinja2", "FastAPI", "Next.js", "React", "GitHub Actions", "GitHub Pages"] },
       { category: "Realtime / API", items: ["WebSocket", "httpx", "Exchange API", "REST Fallback", "Caching"] },
       { category: "Desktop / Local AI", items: ["Tkinter", "PySide6", "faster-whisper", "FFmpeg", "PyInstaller"] },
