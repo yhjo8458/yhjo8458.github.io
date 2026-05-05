@@ -135,6 +135,14 @@
         result: "Codex가 코드뿐 아니라 PPTX 생성, 발표 문구 정리, 디자인 팔레트 반영, PNG 미리보기 생성, 오류 원인 분석에도 활용될 수 있다는 점을 배웠습니다. PPTX는 단순 파일이 아니라 여러 XML과 관계 파일로 구성된 패키지이므로 생성 후 미리보기와 관계 검증이 필요하고, Windows에서는 PowerPoint가 파일을 열고 있으면 덮어쓰기가 실패할 수 있다는 점을 기억할 내용으로 정리했습니다.",
         tech: ["Codex", "PowerPoint", "Node.js", "@oai/artifact-tool", "PowerShell", "Color Hunt", "PPTX Validation"],
         link: ""
+      },
+      {
+        name: "Codex Subagent를 활용한 AI 데모 콘텐츠 기획",
+        problem: "Codex Subagent의 장점을 보여주는 YouTube 구현 데모를 기획하면서, 단순히 AI가 코드를 작성하는 장면보다 역할 분담과 검증을 통해 실제 콘텐츠 전략이 개선되는 과정을 보여줄 수 있는지 실습했습니다.",
+        solution: "Kuhn은 구현 데모 아이디어를 제안하는 기획자, Erdos는 아이디어를 냉정하게 평가하는 평가자, Boole은 제목과 썸네일 훅을 제안하는 카피라이터, Nietzsche는 실제 YouTube 조회수 데이터를 검토하는 데이터분석가로 역할을 나눴습니다. 초기 개발자 중심 데모 후보를 검토한 뒤, 데이터 기반으로 업무자동화와 SaaS 앱 방향이 더 강하다는 판단으로 전략을 전환했습니다.",
+        result: "최종 데모 콘셉트는 Codex Subagent 5개를 AI 개발팀처럼 나눠 고객문의 자동처리 SaaS를 만드는 방향으로 정리했습니다. Subagent의 강점은 단순 병렬 실행이 아니라 역할 분담, 검증 분리, 결과 통합에 있으며, 개발자에게 멋진 데모와 YouTube에서 잘 팔리는 데모는 다를 수 있다는 점을 기억할 내용으로 남겼습니다.",
+        tech: ["Codex", "Subagent", "Content Strategy", "YouTube Research", "Role-based Workflow", "SaaS Demo Planning"],
+        link: ""
       }
     ],
     services: [
@@ -178,6 +186,7 @@
       { category: "Realtime / API", items: ["WebSocket", "httpx", "Exchange API", "REST Fallback", "Caching"] },
       { category: "Desktop / Local AI", items: ["Tkinter", "PySide6", "faster-whisper", "FFmpeg", "PyInstaller"] },
       { category: "Document Automation", items: ["Codex", "PowerPoint", "PPTX", "@oai/artifact-tool", "Color Hunt"] },
+      { category: "AI Workflow", items: ["Codex Subagent", "Role Splitting", "Evaluation", "Copywriting", "Data Review"] },
       { category: "Testing / Quality", items: ["unittest", "pytest", "Vitest", "TypeScript Typecheck", "Logging", "Layered Architecture"] }
     ],
     contact: {
